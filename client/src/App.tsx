@@ -53,24 +53,32 @@ function App() {
           }
         />
         <Route
-          path="/profile"
+          path="/profile/list"
           element={
             <>
               <PageTitle title="Profile | Profile" />
               <Profile />
             </>
           }
-        >
-          <Route
-            path="edit"
-            element={
-              <>
-                <PageTitle title="Edit Profile | Profile" />
-                <EditProfile />
-              </>
-            }
-          />
-        </Route>
+        />
+        <Route
+          path="/profile/edit/:id"
+          element={
+            <>
+              <PageTitle title="Edit Profile | Profile" />
+              <EditProfile />
+            </>
+          }
+        />
+        <Route
+          path="/profile/create"
+          element={
+            <>
+              <PageTitle title="Create Profile | Profile" />
+              <EditProfile />
+            </>
+          }
+        />
         <Route
           path="/forms/form-elements"
           element={

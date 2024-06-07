@@ -24,7 +24,7 @@ const Profiles = () => {
 
   return (
     <DefaultLayout>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10">{data.map(item => JSON.stringify(item))}
        <TableBasic data={data}/>
       </div>
     </DefaultLayout>

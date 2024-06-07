@@ -36,6 +36,7 @@ const updateUser = async (req, res) => {
 };
 
 const deleteUser = async (req, res) => {
+  console.log(req);
   try {
     const { id } = req.params;
     await User.findByIdAndDelete(id);
